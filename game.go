@@ -19,10 +19,10 @@ var gameOverWaiting = false
 var bestScore = 0
 var currentScore = 0
 var cells = [][]int{
-	{1024, 2048, 512, 1024},
-	{2, 1024, 32, 16},
-	{8, 4, 2, 64},
-	{1024, 1024, 8, 32},
+	{0, 0, 0, 0},
+	{0, 0, 0, 0},
+	{0, 0, 0, 0},
+	{0, 0, 0, 0},
 }
 
 var colors = make(map[int]ui.Style)

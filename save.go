@@ -15,7 +15,7 @@ type Save struct {
 }
 
 func loadGame() bool {
-	bytes, err := ioutil.ReadFile(getHomeDir() + ".2048_data.json")
+	bytes, err := ioutil.ReadFile(getHomeDir() + ".term2048_data.json")
 	if err != nil {
 		return false
 	}
@@ -39,7 +39,7 @@ func saveGame() {
 		Cells:        cells,
 	})
 
-	err := ioutil.WriteFile(getHomeDir()+".2048_data.json", output, 0644)
+	err := ioutil.WriteFile(getHomeDir()+".term2048_data.json", output, 0644)
 	check(err)
 }
 
